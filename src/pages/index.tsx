@@ -41,7 +41,7 @@ export default function Home() {
           <p className="text-2xl font-bold">🎁 Grant Cart</p>
         </div>
       </header>
-      <div className="my-20 p-4">
+      <div className="my-20 p-4 text-center">
         <h1 className="text-4xl font-bold my-2">
           Get the latest info about{" "}
           <span className="text-purple-500">Solana Grants</span> in one place.
@@ -79,14 +79,17 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap items-center gap-3">
+        <div className="flex flex-wrap items-center gap-3 justify-center">
           {grants.map((_, i) => (
             <GrantCard key={i} />
           ))}
         </div>
       </div>
       <footer className="text-center py-10 bg-black text-white">
-        Built with ❤ by <a href="https://twitter.com/_dynage" target="_blank">@Dynage</a>
+        Built with ❤ by{" "}
+        <a href="https://twitter.com/_dynage" target="_blank">
+          @Dynage
+        </a>
       </footer>
     </main>
   );
