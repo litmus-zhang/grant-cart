@@ -10,5 +10,6 @@ test("Grant Card", () => {
     }
     render(<GrantCard {...props} />)
     const main = screen.getByText("Google Grant")
-    expect(main).toBeDefined()
+
+    expect(main).toBe("Google Grant")
 })
