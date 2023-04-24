@@ -52,7 +52,7 @@ export default function Home({ grants }: InferGetStaticPropsType<typeof getStati
           </a>
         </Button>
       </div>
-      <section id='main' className="bg-gray-100 w-full h-fit p-4">
+      <div id='main' className="bg-gray-100 w-full h-fit p-4">
         <div className="my-2 mb-8">
           <p className="text-xl font-bold">Filter</p>
           <div className="flex gap-2">
@@ -69,7 +69,7 @@ export default function Home({ grants }: InferGetStaticPropsType<typeof getStati
             <GrantCard link={data.link} title={data.title} key={i} />
           ))}
         </div>
-      </section>
+      </div>
       <footer className="text-center py-10 bg-black text-gray-400">
         Built with ❤ by{" "}
         <a href="https://twitter.com/_dynage" className='underline' target="_blank">
